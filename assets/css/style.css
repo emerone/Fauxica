@@ -55,3 +55,81 @@ header ul a.active::before {
     border-bottom: 2px solid black;
     transform: scalex(1);
 }
+
+
+main {
+    display: flex;
+    gap: 5rem;
+    margin-top: 6.5rem;
+}
+
+
+.left {
+    max-width: 33.75rem;
+}
+.left section h1 {
+    font-family: 'Playfair Display';
+    font-weight: 300;
+    font-size: 3.25rem;
+    margin: 0;
+}
+.left section p {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+
+.cta-btns {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0%;
+}
+.cta-btns a {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: "poppins";
+    background-color: #d5d3c4;
+    padding: 1.125rem 2rem;
+    border-radius: 125rem;
+    text-decoration: none;
+    color: black;
+}
+.cta-btns span {
+    font-family: 'poppins';
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+.cta-btns svg {
+    width: 1.25rem;
+}
+
+
+.news {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    padding: 3rem;
+    border: solid 1px;
+    border-radius: 1rem;
+}
+.news::before {
+    content: "";
+    position: absolute;
+    background-image: url(../image/fx-1.svg);
+    inset: -1rem 28rem 5rem -1rem;
+}
+.news p:first-child {
+    font-size: 2rem;
+    font-family: 'poppins';
+    font-weight: 200;
+    margin: 0%;
+}
+.news p:last-child {
+    font-size: 0.875rem;
+    font-family: 'poppins';
+    font-weight: 400;
+    margin: 0%;
+}
