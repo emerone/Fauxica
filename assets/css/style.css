@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+*::selection {
+    background: #3333;
+}
+
+
+img::selection {
+    background: #0000;
+}
+
+
 a {
     text-decoration: none;
     color: black;
@@ -22,7 +32,7 @@ header {
     align-items: center;
     height: 6.5rem;
 }
-header img {
+header a {
     margin-right: auto;
 }
 header ul {
