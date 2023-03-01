@@ -96,6 +96,17 @@ main {
     border-radius: 125rem;
     text-decoration: none;
     color: black;
+    transition: background-color .1s ease;
+}
+.cta-btns a:hover {
+    background-color: #c7c6b7;
+
+}
+.cta-btns div {
+    cursor: pointer;
+}
+.cta-btns div:hover svg {
+    transform: translateX(0.5rem);
 }
 .cta-btns span {
     font-family: 'poppins';
@@ -104,6 +115,7 @@ main {
 }
 .cta-btns svg {
     width: 1.25rem;
+    transition: all .2s ease;
 }
 
 
@@ -149,6 +161,10 @@ main {
     position: relative;
     padding: 1rem;
     display: flex;
+    transition: all 0.3s ease;
+}
+.right > div:hover > div {
+    transform: translateY(-1rem);
 }
 .right > div::after {
     content: "";
@@ -165,25 +181,38 @@ main {
     background-size: 130%;
     background-position: 20%;
 }
+.right > div:nth-of-type(1):hover {
+    background-size: 140%;
+}
 .right > div:nth-of-type(1)::before {
     content: "";
     position: absolute;
     background-image: url(../image/fx-2.svg);
     background-repeat: no-repeat;
     inset: 1rem 0rem 0rem -2rem ;
-    transform: rotate(-10deg);
+    transform: rotate(-4deg);
     z-index: 0;
+    transition: all 01s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.right > div:nth-of-type(1):hover::before {
+    transform: rotate(-10deg);
 }
 .right > div:nth-of-type(2) {
     grid-area: right;
     background-image: url(../image/background-2.jpg);
     background-size: 140%;
 }
+.right > div:nth-of-type(2):hover {
+    background-size: 155%;
+}
 .right > div:nth-of-type(3) {
     grid-area: bottom;
     background-image: url(../image/background-3.jpg);
     background-size: 140%;
     background-position: 90%;
+}
+.right > div:nth-of-type(3):hover {
+    background-size: 155%;
 }
 .right > div > div {
     width: 100%;
@@ -198,6 +227,7 @@ main {
     margin-top: auto;
     margin-bottom: 0%;
     z-index: 1;
+    transition: all 0.3s ease;
 }
 .right > div > div > div > a {
     font-family: "poppins";
