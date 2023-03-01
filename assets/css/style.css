@@ -61,6 +61,17 @@ main {
     display: flex;
     gap: 5rem;
     margin-top: 6.5rem;
+    animation: size 2s ease forwards;
+}   
+
+
+@keyframes size {
+    0% {
+        scale: 0.5;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 
@@ -244,4 +255,24 @@ main {
     font-size: 1.125rem;
     font-weight: 400;
     margin: 0%;
+}
+
+
+.reveal {
+    position: fixed;
+    z-index: 99;
+    inset: 0px;
+    background: #e0e0e0;
+    pointer-events: none;
+    animation: reveal 2s ease forwards;
+}
+
+@keyframes reveal {
+    0% {
+        clip-path: inset(0 0 0 0);
+    }
+    100% {
+        clip-path: inset(100% 0% 0% 0);
+    }
+    
 }
